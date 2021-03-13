@@ -23,18 +23,15 @@
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95H-1C-6nE" userLabel="A">
                                 <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="S88-OX-W8x"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eD8-eB-1Yq" firstAttribute="top" secondItem="95H-1C-6nE" secondAttribute="bottom" constant="30" id="5uD-cK-bdo"/>
-                            <constraint firstItem="95H-1C-6nE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CKS-Zq-Ux6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eD8-eB-1Yq" secondAttribute="bottom" id="Edf-pw-Fid"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eD8-eB-1Yq" secondAttribute="trailing" id="KVw-Tt-AAK"/>
-                            <constraint firstItem="95H-1C-6nE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LHI-bX-WUE"/>
-                            <constraint firstItem="eD8-eB-1Yq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TLG-OB-gv6"/>
-                            <constraint firstItem="95H-1C-6nE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iCG-26-oJe"/>
+                            <constraint firstItem="eD8-eB-1Yq" firstAttribute="top" secondItem="95H-1C-6nE" secondAttribute="bottom" constant="30" id="a5Q-Kz-Kq0"/>
                         </constraints>
                     </view>
                 </viewController>
