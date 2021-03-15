@@ -24,56 +24,47 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ze-4Q-YJO" userLabel="main">
-                                <rect key="frame" x="30" y="164" width="354" height="578"/>
+                                <rect key="frame" x="30" y="164" width="354" height="612"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffh-X7-f4d" userLabel="footer1">
-                                <rect key="frame" x="30" y="752" width="111.5" height="80"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lRs-Dv-HAB">
+                                <rect key="frame" x="30" y="786" width="354" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffh-X7-f4d" userLabel="footer1">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bb-SP-v2W" userLabel="footer2">
+                                        <rect key="frame" x="91" y="0.0" width="81" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf5-lB-Zty" userLabel="footer3">
+                                        <rect key="frame" x="182" y="0.0" width="81" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdY-M5-YOq" userLabel="footer4">
+                                        <rect key="frame" x="273" y="0.0" width="81" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="XAy-3o-wyN"/>
+                                    <constraint firstAttribute="height" constant="80" id="lrp-tm-NH4"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bb-SP-v2W" userLabel="footer2">
-                                <rect key="frame" x="151.5" y="752" width="111" height="80"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="HVH-EZ-W0Z"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf5-lB-Zty" userLabel="footer3">
-                                <rect key="frame" x="272.5" y="752" width="111.5" height="80"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="Tu3-F7-kQX"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ffh-X7-f4d" secondAttribute="bottom" constant="30" id="25g-0T-bzD"/>
-                            <constraint firstItem="Ffh-X7-f4d" firstAttribute="top" secondItem="4ze-4Q-YJO" secondAttribute="bottom" constant="10" id="6sT-WD-arE"/>
-                            <constraint firstItem="7bb-SP-v2W" firstAttribute="leading" secondItem="Ffh-X7-f4d" secondAttribute="trailing" constant="10" id="8s5-qN-Ium"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ze-4Q-YJO" secondAttribute="trailing" constant="30" id="AWd-8c-1Uf"/>
-                            <constraint firstItem="7bb-SP-v2W" firstAttribute="width" secondItem="Ffh-X7-f4d" secondAttribute="width" id="BqE-dw-gzp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7bb-SP-v2W" secondAttribute="bottom" constant="30" id="Cen-Vu-U8D"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bf5-lB-Zty" secondAttribute="bottom" constant="30" id="Efx-Q3-5TO"/>
-                            <constraint firstItem="Bf5-lB-Zty" firstAttribute="width" secondItem="Ffh-X7-f4d" secondAttribute="width" id="F3h-Wd-xdM"/>
+                            <constraint firstItem="lRs-Dv-HAB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FFg-tx-8J1"/>
                             <constraint firstItem="T9X-f8-akH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FqG-vv-nFK"/>
-                            <constraint firstItem="Ffh-X7-f4d" firstAttribute="top" secondItem="4ze-4Q-YJO" secondAttribute="bottom" constant="10" id="HIX-jo-Ufu"/>
-                            <constraint firstItem="7bb-SP-v2W" firstAttribute="leading" secondItem="Ffh-X7-f4d" secondAttribute="trailing" constant="10" id="L4d-4M-Xni"/>
                             <constraint firstItem="T9X-f8-akH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="MZG-VE-gFN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T9X-f8-akH" secondAttribute="trailing" constant="30" id="Nei-E3-ylN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lRs-Dv-HAB" secondAttribute="trailing" constant="30" id="RL6-qH-kMK"/>
                             <constraint firstItem="4ze-4Q-YJO" firstAttribute="top" secondItem="T9X-f8-akH" secondAttribute="bottom" constant="10" id="WNx-fP-nD7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bf5-lB-Zty" secondAttribute="trailing" constant="30" id="WYH-ok-RoS"/>
-                            <constraint firstItem="Bf5-lB-Zty" firstAttribute="top" secondItem="4ze-4Q-YJO" secondAttribute="bottom" constant="10" id="che-gT-xQc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ffh-X7-f4d" secondAttribute="bottom" constant="30" id="f91-3X-aQC"/>
-                            <constraint firstItem="Ffh-X7-f4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="fX2-aF-GJf"/>
-                            <constraint firstItem="Bf5-lB-Zty" firstAttribute="leading" secondItem="7bb-SP-v2W" secondAttribute="trailing" constant="10" id="guS-Xt-i0z"/>
-                            <constraint firstItem="Ffh-X7-f4d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hgo-FJ-6K2"/>
-                            <constraint firstItem="7bb-SP-v2W" firstAttribute="top" secondItem="4ze-4Q-YJO" secondAttribute="bottom" constant="10" id="sze-Mv-4Xj"/>
+                            <constraint firstAttribute="bottom" secondItem="lRs-Dv-HAB" secondAttribute="bottom" constant="30" id="ZFz-pd-WTy"/>
                             <constraint firstItem="4ze-4Q-YJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tOe-sF-nwr"/>
+                            <constraint firstItem="lRs-Dv-HAB" firstAttribute="top" secondItem="4ze-4Q-YJO" secondAttribute="bottom" constant="10" id="zcP-R3-bI1"/>
                         </constraints>
                     </view>
                 </viewController>
