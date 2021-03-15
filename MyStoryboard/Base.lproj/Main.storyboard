@@ -16,18 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQQ-vH-uZC">
-                                <rect key="frame" x="298" y="74" width="86" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14w-SG-VbE">
+                                <rect key="frame" x="30" y="74" width="296" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gj4-NT-WXY">
+                                <rect key="frame" x="336" y="74" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cQQ-vH-uZC" secondAttribute="trailing" constant="30" id="Zg5-Ha-zoo"/>
-                            <constraint firstItem="cQQ-vH-uZC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="qIq-am-Vv9"/>
+                            <constraint firstItem="14w-SG-VbE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="9el-WV-0eG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gj4-NT-WXY" secondAttribute="trailing" constant="30" id="MJs-WE-dbo"/>
+                            <constraint firstItem="Gj4-NT-WXY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OS6-wc-d08"/>
+                            <constraint firstItem="Gj4-NT-WXY" firstAttribute="leading" secondItem="14w-SG-VbE" secondAttribute="trailing" constant="10" id="fon-mh-zVK"/>
+                            <constraint firstItem="14w-SG-VbE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rxT-Zm-ok6"/>
                         </constraints>
                     </view>
                 </viewController>
